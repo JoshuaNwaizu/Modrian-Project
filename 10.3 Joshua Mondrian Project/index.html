@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joshua Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .shaded {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: rgb(218, 117, 117);
+      flex-direction: column;
+    }
+    .container {
+      display: grid;
+      width: 748px;
+      height: 748px;
+      background-color: #000;
+      grid-template-columns: 83px 243px 240px 150px;
+      grid-template-rows: 30px 150px 270px 80px 20px;
+      border-radius: 10px;
+      gap: 10px;
+    }
+
+    .colour.yellow {
+      background-color: #5e6446;
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    .colour {
+      background-color: #004592;
+    }
+
+    .colour.red {
+      background-color: #E72F24;
+      grid-column: span 2;
+      grid-row: span 1;
+    }
+
+    .colour.purple {
+      background-color: #E72F24;
+      grid-column: span 2;
+      grid-row: span 2;
+
+    }
+
+    .colour.blue {
+      background-color: purple;
+    }
+
+    .colour.red2 {
+      background-color: #232629;
+    }
+
+    .colour.purple2 {
+      background-color: purple;
+      grid-row: span 2;
+    }
+    .blue2 {
+      background-color: blue;
+      grid-row: span 2;
+    }
+    .yellow2 {
+      background-color: #F9D01E;
+      grid-row: span 2;
+    }
+    .blue3 {
+      background-color: #E72F24;
+      grid-row: span 3;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="shaded">
+    <div class="container">
+      <div class="colour yellow"></div>
+      <div class="colour red"></div>
+      <div class="colour purple"></div>
+      <div class="colour blue"></div>
+      <div class="colour red2"></div>
+      <div class="colour purple2"></div>
+      <div class="colour blue2"></div>
+      <div class="colour yellow2"></div>
+      <div class="colour blue3"></div>
+      <div class="colour black"></div>
+      <div class="colour yellow3"></div>
+      <div class="colour blue4"></div>
+    </div>
+    <h1>Sold For $7.2millioin</h1>
+  </div>
+</body>
+
+</html>
